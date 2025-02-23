@@ -1,0 +1,292 @@
+@charset "utf-8";
+@font-face {
+    font-family: "ubuntu";
+    src: url("../static/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+    font-family: "PressStart2P";
+    src: url("../static//fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+:root {
+    --color-black-1: #000;
+    --color-white-1: #fff;
+    --color-gray-1: #fff4;
+
+    --color-blue-1: #3131c2;
+    --color-blue-2: #0d0251;
+    --color-blue-3: #00ffff;
+    --color-blue-4: #8588ff;
+    --color-blue-5: #2a24a4;
+    --color-blue-6: #211887;
+    --color-blue-7: #170c6b;
+}
+
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+
+
+
+
+body {
+    margin: 0;
+    background-color: var(--color-black-1);
+    font-family: "ubuntu", "monospace";
+    color: var(--color-white-1);
+    position: relative;
+    z-index: 2;
+}
+main {
+    position: relative;
+    z-index: 2;
+}
+header {
+    min-height: 2rem;
+    font-family: "monospace";
+    z-index: 2;
+    position: relative;
+}
+footer {
+    background-color: var(--color-white-1);
+    color: var(--color-black-1);
+    font-family: monospace;
+    position: relative;
+    z-index: 2;
+    text-align: end;
+    padding: 8px 10px;
+    display: none;
+}
+h1 {
+    font-size: 7rem;
+}
+h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    color: var(--color-white-1);
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    margin: 0 15px;
+}
+.link:hover {
+    color: var(--color-blue-3);
+}
+
+.spacer {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 900/254;
+    z-index: 2;
+    position: relative;
+}
+
+.background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.2;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+
+
+
+
+
+
+#starry-background {
+    background-image: url("../static/images/starry-background.png");
+}
+
+#wavy-transition {
+    background-image: url("../static/images/svg/waves-background.svg");
+}
+
+#header-logo {
+    width: 3rem;
+}
+@media (max-width: 800px) {
+    #header-logo {
+        width: 1.5rem;
+    }
+}
+
+#title {
+    text-align: center;
+    font-size: 3rem;
+}
+#title h1 {
+    background: var(--color-blue-1);
+    background: linear-gradient(90deg, #e02323 0%, #f27401 13%, #f5ff25 32%, #25fb3f 50%, #1a3bff 67%, #5529ff 84%, #b258f9 100%);
+    background-size: 400%;
+    animation: gradient 10s linear infinite;
+    background-clip: text;
+    color: transparent;
+    font-family: "PressStart2P";
+}
+@media (max-width: 800px) {
+    #title h1 {
+        font-size: 2rem;
+    }   
+}
+
+
+section#banner {
+    flex-wrap: wrap;
+    background-color: var(--color-blue-1);
+    
+}
+section#banner img {
+    width: 60%;
+    max-width: 400px;
+    margin: 0 2rem;
+}
+@media (max-width: 865px) {
+    section#banner img {
+        display: none;
+    }
+}
+section#banner p {
+    margin: 2rem 1rem;
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: var(--color-blue-2);
+    width: fit-content;
+    background-color: var(--color-white-1);
+    border: 0px solid var(--color-blue-5);
+    border-left-width: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    
+}
+@media (max-width: 800px) {
+    section#banner {
+        justify-content: center;
+    }
+}
+
+
+section#about-me {
+    background-color: var(--color-blue-5);
+    padding: 5rem 0;
+}
+section#about-me div {
+    width: 75%;
+    margin: 0 auto;
+}
+section#about-me p {
+    font-size: 1.3rem;
+}
+
+
+section#skills {
+    min-height: 15rem;
+    background-color: var(--color-blue-6);
+    padding: 5rem 0;
+}
+@media (max-width: 1320px) {
+    section#skills h2 {
+        text-align: center;
+    }    
+}
+section#skills ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section#skills li {
+    background-color: var(--color-white-1);
+    color: var(--color-black-1);
+    border-radius: 8px;
+    width: min-content;
+    min-width: 20rem;
+    max-height: 5rem;
+    margin: 5px;
+    display: flex;
+    overflow: clip;
+}
+section#skills li h3 {
+    margin: 0;
+}
+section#skills li p {
+    margin: 0;
+    font-size: .8rem;
+}
+section#skills li img {
+    margin-right: 10px;
+    height: 5rem;
+    background-color: var(--color-black-1);
+}
+
+
+section#history {
+    background-color: var(--color-blue-7);
+    padding: 5rem 0;
+}
+section#history>div {
+    border: 5px dashed var(--color-blue-2);
+    border-radius: 18px;
+    padding: 15px 25px;
+}
+#history-list {
+    background-color: var(--color-white-1);
+    min-height: 5rem;
+    border-radius: 8px;
+    color: var(--color-black-1);
+}
+#history-list li {
+    padding: .2rem .5rem;
+}
+
+
+section#contact-me {
+    margin: 0;
+    background-color: var(--color-white-1);
+    padding: 2rem 1rem;
+    color: var(--color-black-1);
+}
+section#contact-me li {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1rem;
+    margin: 5px;
+}
+section#contact-me li a {
+    text-decoration: none;
+}
+section#contact-me img {
+    height: 3rem;
+    padding-right: 5px;
+}
