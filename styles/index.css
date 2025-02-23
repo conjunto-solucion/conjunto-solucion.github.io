@@ -37,6 +37,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 body {
     width: 100vw;
+    overflow-x: hidden;
     margin: 0;
     background-color: var(--color-black-1);
     font-family: "ubuntu", "monospace";
