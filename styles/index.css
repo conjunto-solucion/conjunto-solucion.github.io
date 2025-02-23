@@ -225,6 +225,10 @@ section#skills {
     section#skills h2 {
         text-align: center;
     }    
+    section#skills>div {
+        max-width: none;
+        width: 95%;
+    }
 }
 section#skills ul {
     flex-wrap: wrap;
