@@ -48,6 +48,7 @@ body {
 main {
     position: relative;
     z-index: 2;
+    overflow-x: hidden;
 }
 header {
     min-height: 2rem;
