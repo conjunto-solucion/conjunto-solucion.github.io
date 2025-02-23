@@ -61,7 +61,7 @@ footer {
     display: none;
 }
 h1 {
-    font-size: 7rem;
+    font-size: 6.5rem;
 }
 h2 {
     margin: 0;
@@ -154,7 +154,7 @@ ul {
     color: transparent;
     font-family: "PressStart2P";
 }
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     #title h1 {
         font-size: 2rem;
     }   
@@ -171,7 +171,12 @@ section#banner img {
     max-width: 400px;
     margin: 0 2rem;
 }
-@media (max-width: 865px) {
+@media (max-width: 900px) {
+    section#banner img {
+        width: 30%;
+    }
+}
+@media (max-width: 600px) {
     section#banner img {
         display: none;
     }
