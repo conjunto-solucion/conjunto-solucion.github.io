@@ -325,6 +325,8 @@ section#contact-me img {
 section#contact-me iframe {
     display: block;
     max-width: 500px;
-    width: 100%;
+    width: 94%;
     margin: 0 auto;
+    height: 800px;
+    overflow: hidden;
 }
