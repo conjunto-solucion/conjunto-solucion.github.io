@@ -81,6 +81,7 @@ h2 {
 }
 h4 {
     padding: 10px;
+    margin: 0;
 }
 ul {
     list-style-type: none;
@@ -233,7 +234,7 @@ section#about-me div {
     margin: 0 auto;
 }
 section#about-me p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 
@@ -321,39 +322,9 @@ section#contact-me img {
     height: 3rem;
     padding-right: 5px;
 }
-section#contact-me form {
-    
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem 0;
-    
-}
-section#contact-me form * {
-    display: block;
-    margin: 1rem auto;
-    width: 80%;
-    border-radius: 5px;
-    border: none;
-}
-section#contact-me form textarea {   
-    height: 6rem;
-    resize: none;
-    border: 1px solid gray;
-}
-section#contact-me form input {
-    border: 1px solid gray;
-    
-}
-section#contact-me form button {
-    padding: .4rem;
-    background-color: #08cf20;
-    color: white;
-    cursor: pointer;
-}
-section#contact-me form button:hover {
-    background-color: #08aa1b;
-}
 section#contact-me iframe {
     display: block;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
 }
