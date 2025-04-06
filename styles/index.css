@@ -1,5 +1,134 @@
-@import url("./definitions.css");
-@import url("./general.css");
+@charset "utf-8";
+@font-face {
+    font-family: "ubuntu";
+    src: url("../static/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+    font-family: "PressStart2P";
+    src: url("../static//fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+
+
+:root {
+    --color-black-1: #000;
+    --color-white-1: #fff;
+    --color-gray-1: #fff4;
+
+    --color-blue-1: #3131c2;
+    --color-blue-2: #0d0251;
+    --color-blue-3: #00ffff;
+    --color-blue-4: #8588ff;
+    --color-blue-5: #2a24a4;
+    --color-blue-6: #211887;
+    --color-blue-7: #170c6b;
+}
+
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+@keyframes pulse {
+	0% {opacity: .7;}
+	50% {opacity: 0.1;}
+	100% {opacity: .7;}
+}
+
+
+
+
+
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: black;
+    font-family: "ubuntu", "monospace";
+    color: white;
+}
+main {
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+    width: 100vw;
+}
+header {
+    margin: 0;
+    font-family: "monospace";
+    z-index: 2;
+    position: relative;
+}
+footer {
+    position: relative;
+    z-index: 2;
+}
+h4 {
+    padding: 10px;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    margin: 0 15px;
+}
+.link:hover {
+    color: var(--color-blue-3);
+}
+
+.spacer {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 900/254;
+    z-index: 2;
+    position: relative;
+}
+
+.background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 3rem;
+}
+
+
+
 
 
 
