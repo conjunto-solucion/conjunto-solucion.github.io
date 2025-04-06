@@ -8,23 +8,41 @@
    <link rel="stylesheet" href="./styles/index.css">
    <title>Juan Andrés Dos Santos</title>
 </head>
+
+
+
 <body>
 
 
+   
    <div class="background-layer" id="starry-background"></div>
 
-   <header>
+
+
+   <header class="flex" id="header">
+
+      <div id="header-title" class="flex">
+         <img alt="" src="./static/images/svg/emblem.svg">
+         <h3>Conjunto Solución</h3>
+      </div>
+
       <nav class="flex">
-         <!-- <img alt="" id="header-logo" src="./static/images/svg/emblem.svg"> -->
-         <a class="link" href="./static/documents/CV.pdf">Ver CV</a>
+         <a href="./static/documents/CV.pdf"><button>Ver CV</button></a>
          <a class="link" href="#contact-me">Contacto</a>
+
+         <a href="https://wa.link/7vnjw4"><img src="./static//images/svg/whatsapp.svg" alt=""></a>
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=juan301675@gmail.com"><img src="./static//images/svg/gmail.svg" alt=""></a>
+         <a href="https://www.linkedin.com/in/juan-andr%C3%A9s-dos-santos-9129a3355/"><img src="./static//images/svg/linkedin.svg" alt=""></a>
+         <a href="https://github.com/conjunto-solucion"><img src="./static//images/svg/github.svg" alt=""></a>
       </nav>
+
+   </header>
       
 
-      <div id="title">
-         <h1>Juan Andrés Dos Santos</h1>
-      </div>
-   </header>
+   <div id="title">
+      <h1>Juan Andrés Dos Santos</h1>
+   </div>
+   
 
    <main>
       <div class="spacer" id="wavy-transition"></div>
@@ -44,7 +62,7 @@
 
       <section id="about-me">
          <div>
-            <h2>Acerca de mí</h2>
+            <h2 class="section-title">Acerca de mí</h2>
             <p>¡Hola! Soy Juan Andrés. Soy técnico en informática y geek de las computadoras.
                Actualmente hago trabajos como freelancer bajo el nombre "Conjunto Solución".
             </p>
@@ -66,7 +84,7 @@
       <section id="skills">
          <div class="section-wrapper">
             
-            <h2>Mis habilidades</h2>
+            <h2 class="section-title">Mis habilidades</h2>
 
             <ul class="flex">
                <li>
@@ -134,7 +152,7 @@
 
       <section id="history">
          <div class="section-wrapper">
-            <h2>Historial</h2>
+            <h2 class="section-title">Historial</h2>
 
             <ul id="history-list">
                <li>2025</li>
@@ -162,14 +180,6 @@
 
 
       <section id="contact-me">
-         <h3>Contácteme:</h3>
-         <ul>
-            <li><img src="./static//images/svg/whatsapp.svg" alt=""><a href="https://wa.link/7vnjw4">+54 3757-301675</a></li>
-            <li><img src="./static//images/svg/gmail.svg" alt=""><a href="https://mail.google.com/mail/?view=cm&fs=1&to=juan301675@gmail.com">juan301675@gmail.com</a></li>
-            <li><img src="./static//images/svg/linkedin.svg" alt=""><a href="https://www.linkedin.com/in/juan-andr%C3%A9s-dos-santos-9129a3355/">Mi perfil de LinkedIn</a></li>
-            <li><img src="./static//images/svg/github.svg" alt=""><a href="https://github.com/conjunto-solucion">Encuéntreme en GitHub como conjunto-solucion</a></li>
-         </ul>
-
          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScq4dYqyaA6gM3BI_cc6KwJH9ujyKg6q2-gVQiN6yytnpdssQ/viewform?embedded=true" width="500" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
       </section>
 
@@ -178,8 +188,17 @@
 
 
 
-   <footer>
-      Actualizado por última vez en marzo de 2025
+   <footer id="footer">
+
+      <nav>
+         <a class="link" href="https://wa.link/7vnjw4"><img src="./static//images/svg/whatsapp.svg" alt="">+54 3757-301675</a>
+         <a class="link" href="https://mail.google.com/mail/?view=cm&fs=1&to=juan301675@gmail.com"><img src="./static//images/svg/gmail.svg" alt="">juan301675@gmail.com</a>
+         <a class="link" href="https://www.linkedin.com/in/juan-andr%C3%A9s-dos-santos-9129a3355/"><img src="./static//images/svg/linkedin.svg" alt="">Mi perfil de LinkedIn</a>
+         <a class="link" href="https://github.com/conjunto-solucion"><img src="./static//images/svg/github.svg" alt="">conjunto-solucion en GitHub</a>
+      </nav>
+
+
+      <p>Actualizado por última vez en marzo de 2025</p>
    </footer>
 
 </body>
