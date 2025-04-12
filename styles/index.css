@@ -187,13 +187,13 @@ ul {
     display: flex;
     align-items: flex-end;
     width: 90%;
-    font-size: 1.5rem;
     padding-left: 30px;
     max-width: 1200px;
     margin: 0 auto;
     height: 60vh;
 }
 #title h1 {
+    font-size: 2rem;
     background: var(--color-blue-1);
     background: linear-gradient(90deg, #e02323 0%, #f27401 13%, #f5ff25 32%, #25fb3f 50%, #1a3bff 67%, #5529ff 84%, #b258f9 100%);
     background-size: 400%;
@@ -204,7 +204,7 @@ ul {
 }
 @media (max-width: 950px) {
     #title h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }   
 }
 
@@ -266,6 +266,13 @@ section#about-me div {
 }
 section#about-me p {
     font-size: 1.2rem;
+}
+section#about-me #conjunto-solucion-card {
+    width: 40vw;
+    height: 20vw;
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 8px;
 }
 
 
